@@ -1,0 +1,243 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 62.2%;
+  line-height: 1.5;
+}
+
+body {
+  color: #333;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility Classes */
+.mb-1 {
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.mb-2 {
+  margin-bottom: 2.4rem;
+  display: block;
+}
+
+/* Header & Navbar */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2.4rem;
+}
+
+.company-logo {
+  width: 20rem;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav ul li {
+  margin: 0 3rem;
+}
+
+.header-nav ul li a:link,
+.header-nav ul li a:visited {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #006770;
+}
+
+.header-nav ul li a:hover {
+  color: #f47820;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header-nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 0;
+  height: 2px;
+  background-color: #f47820;
+  transition: width 0.3s ease;
+}
+
+.header-nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* General Information Section */
+.general-info {
+  display: flex;
+  margin-left: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.general-info-illustration {
+  width: 17.5rem;
+}
+
+.general-info-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-left: 2.4rem;
+}
+
+.general-info-text h1 {
+  font-size: 3.2rem;
+  color: #f47820;
+}
+
+.general-info-text p {
+  font-size: 1.6rem;
+}
+
+.body-header {
+  color: #006770;
+}
+
+/* Main Content Container */
+.main-content-container {
+  display: flex;
+}
+
+/* Main */
+main {
+  width: 70%;
+  margin-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.main-sections {
+  margin-bottom: 2.4rem;
+}
+
+.section-header {
+  font-size: 2.4rem;
+  color: #f47820;
+  margin-bottom: 1.2rem;
+}
+
+.section-text {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.instructor-container {
+  display: flex;
+  align-items: center;
+}
+
+.instructor-picture {
+  border-radius: 50%;
+  margin-right: 2.4rem;
+}
+
+.section-subheader {
+  font-size: 1.8rem;
+  color: #006770;
+}
+
+/* Aside */
+aside {
+  width: 30%;
+  margin-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.review-cards-container {
+  display: flex;
+  flex-flow: column;
+  gap: 2.4rem;
+}
+
+.review-card {
+  background-color: #fcefac;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 2.4rem;
+  border: 1px solid #f0cc17;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.reviewer-photo {
+  width: 7.5rem;
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  font-size: 1.6rem;
+  color: #006770;
+}
+
+.telephone,
+.email,
+.location {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contact-icon {
+  width: 2.5rem;
+}
+
+/* Footer */
+footer {
+  padding: 2.4rem;
+  background-color: #00454c;
+}
+
+.logo-sitemap-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-logo-2 {
+  width: 25rem;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+}
+
+.copy {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+}
